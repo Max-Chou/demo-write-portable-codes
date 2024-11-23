@@ -86,3 +86,12 @@ The rest of codes will be system-independent.
 ## Dynamic Library
 
 About dynamic libraries... we should have the function pointers defined in the wrapper.h. If the function pointer is NULL, that function is not supporting the specific platform.
+
+## Design
+![image](./design.png)
+
+## Something missing...
+
+First, implementation of threading and networking in different systems is hard. I'm not experienced enough to implement it here... Finding the developers who are capable to design and implement the threading on Windows and Unix is hard. 
+
+Second, testing the cross-platform programs is hard. You need to write the cross-platform testing tools to run the library or program.

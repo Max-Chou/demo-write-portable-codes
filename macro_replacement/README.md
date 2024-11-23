@@ -2,7 +2,7 @@
 
 On Windows, we can use the macro like _Unicode to select the APIs for wide characters or multibytes characters. 
 
-```
+```c
 #ifdef _UNICODE
 
 #define CreateFile CreateFileW
