@@ -2,7 +2,7 @@
 
 Warning: the code is not tested and compiled on Linux and Windows. I need to use build tools to compile codes on different platforms. Well... it's just the demo anyway.
 
-## Compiler or Operating System
+## Compilers or Operating Systems
 
 We need to think how many platforms our product should support, Windows, Linux, Mac, Unix-Like systems... Or the product can run on Windows, but your boss want it run on Linux or Mac in the future.
 
@@ -68,7 +68,7 @@ typedef pthread_t THANDLE;                      /* thread handle */
 
 1. define the basic data type like pointer and integer because every compiler has different definition.
 
-2. define handle, file handle, module handle, thread handle...
+2. define handle, file handle, module handle, thread handle which will be different on Windows and Unix.
 
 
 ## Abstraction Layer
@@ -92,6 +92,10 @@ About dynamic libraries... we should have the function pointers defined in the w
 
 ## Something missing...
 
-First, implementation of threading and networking in different systems is hard. I'm not experienced enough to implement it here... Finding the developers who are capable to design and implement the threading on Windows and Unix is hard. 
+This is just very 
 
-Second, testing the cross-platform programs is hard. You need to write the cross-platform testing tools to run the library or program.
+### Implementation 
+
+### Testing 
+
+### CI/CD Process
